@@ -5,7 +5,7 @@ public class NCoupledDiffEqs {
 
 	public static int N = 4; // number of differential equations, this number is hardcoded so the program can be run at once. Should be changed to parameter in an OO implemenation.
 	public static double[] y = new double[N]; // y: (y1,y2,...,yn)
-	public static double[] diffEq = new double[N];
+	public static double[] diffEq = new double[N];  // this array will contain the coupled differential equations
 	public static double deltaX = 0.001;
 	public static double y2 = 1;
 	public static double z = 1;
