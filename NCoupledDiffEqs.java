@@ -13,7 +13,7 @@ public class NCoupledDiffEqs {
 	public static int time = 0;
 
 	public static void main(String[] args) {
-		
+		// initial all variables and arrays
 		initialize();
 		for (int i = 0; i < 100; i++) {
 			RKSolveN();
@@ -39,7 +39,7 @@ public class NCoupledDiffEqs {
 	// define differential equations here
 	public static void dydxUpdate(double[] y) 
 	{	
-		diffEq[0] = -y[1]-y[0]*y[0];
+		diffEq[0] = -y[1]-2*y[0]*y[0];
 		diffEq[1] = 2*y[0]-y[1];
 		diffEq[2] = -y[2]+y[0]*y[1];
 		diffEq[3] = -y[3] +y[0];
